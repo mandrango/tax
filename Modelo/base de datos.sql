@@ -67,7 +67,11 @@ USE taxServices;
       primary key(nro_factura),
       constraint fk_tramite_venta foreign key(nro_factura)
       references venta(nro_factura) on update cascade
-      )engine=innodb;
+      )engine=innodb
+    COMMENT 'Representa el tramite de devolucion del los impuestos con el fisco
+    este tramite tiene estados de proceso que siginifca que el tramite incio
+    alerta el tramite esta por vencerse en la fecha PRINTCHECK el tramite esta listo
+    para imrpimir el cheques y PAGADO significa que el tramite fue cerrado';
 
 
 

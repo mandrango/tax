@@ -1,0 +1,19 @@
+----ver que hay de cambios
+git status
+
+---- agrega al repositorio todos los ficheros nuevos
+git add . 
+
+----- enviar los cambios a git y los registra con un mensaje
+git commit -a -m "Mensaje para el commit"
+
+
+sincronizacion de repositorios
+
+
+---- trae todos los cambios sibidos al servidor 
+git pull origin master
+
+
+--- envia todos los cambios al servidor
+git push origin master
